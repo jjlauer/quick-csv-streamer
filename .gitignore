@@ -8,3 +8,4 @@ build
 private-notes.txt
 /keys/
 gradle.properties
+/target/

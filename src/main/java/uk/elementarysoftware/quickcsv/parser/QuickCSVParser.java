@@ -59,7 +59,7 @@ public class QuickCSVParser<T, K extends Enum<K>> implements CSVParser<T> {
     
     @Override
     public Stream<T> parse(ByteArraySource bas) {
-        return StreamSupport.stream(new SplittingSpliterator(bas), true);
+        return StreamSupport.stream(new SplittingSpliterator(bas), false);
     }
 
     class SplittingSpliterator implements Spliterator<T> {
